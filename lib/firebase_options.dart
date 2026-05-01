@@ -41,58 +41,58 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAtarLMMwFD-_WOPkioWHeANXHi_hEBHwU',
-    appId: '1:786942809012:web:48119c06b9c2b694fc98e1',
-    messagingSenderId: '786942809012',
-    projectId: 'blood-bank-app-4ca01',
-    authDomain: 'blood-bank-app-4ca01.firebaseapp.com',
-    databaseURL: 'https://blood-bank-app-4ca01-default-rtdb.firebaseio.com',
-    storageBucket: 'blood-bank-app-4ca01.firebasestorage.app',
-    measurementId: 'G-7LY35F9G30',
+    apiKey: 'YOUR_WEB_API_KEY',
+    appId: 'YOUR_WEB_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    authDomain: 'YOUR_AUTH_DOMAIN',
+    databaseURL: 'YOUR_DATABASE_URL',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
+    measurementId: 'YOUR_MEASUREMENT_ID',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCWRMXoM8lJUuDxDJfd-8eCHkihwl5Kbis',
-    appId: '1:786942809012:android:18c85689f431f12cfc98e1',
-    messagingSenderId: '786942809012',
-    projectId: 'blood-bank-app-4ca01',
-    databaseURL: 'https://blood-bank-app-4ca01-default-rtdb.firebaseio.com',
-    storageBucket: 'blood-bank-app-4ca01.firebasestorage.app',
+    apiKey: 'YOUR_ANDROID_API_KEY',
+    appId: 'YOUR_ANDROID_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    databaseURL: 'YOUR_DATABASE_URL',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAyK2YpR88GgPpBhY6_2nWpWC8kYR8G4us',
-    appId: '1:786942809012:ios:a848dbf6cff74638fc98e1',
-    messagingSenderId: '786942809012',
-    projectId: 'blood-bank-app-4ca01',
-    databaseURL: 'https://blood-bank-app-4ca01-default-rtdb.firebaseio.com',
-    storageBucket: 'blood-bank-app-4ca01.firebasestorage.app',
-    androidClientId: '786942809012-gls4qlm42g896h5nd0q57atl2jvnp3m2.apps.googleusercontent.com',
-    iosClientId: '786942809012-42ibkd9iva8ifbai9tgn33955n7b1gp5.apps.googleusercontent.com',
-    iosBundleId: 'com.example.bloodBankApp',
+    apiKey: 'YOUR_IOS_API_KEY',
+    appId: 'YOUR_IOS_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    databaseURL: 'YOUR_DATABASE_URL',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
+    androidClientId: 'YOUR_ANDROID_CLIENT_ID',
+    iosClientId: 'YOUR_IOS_CLIENT_ID',
+    iosBundleId: 'YOUR_IOS_BUNDLE_ID',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAyK2YpR88GgPpBhY6_2nWpWC8kYR8G4us',
-    appId: '1:786942809012:ios:a848dbf6cff74638fc98e1',
-    messagingSenderId: '786942809012',
-    projectId: 'blood-bank-app-4ca01',
-    databaseURL: 'https://blood-bank-app-4ca01-default-rtdb.firebaseio.com',
-    storageBucket: 'blood-bank-app-4ca01.firebasestorage.app',
-    androidClientId: '786942809012-gls4qlm42g896h5nd0q57atl2jvnp3m2.apps.googleusercontent.com',
-    iosClientId: '786942809012-42ibkd9iva8ifbai9tgn33955n7b1gp5.apps.googleusercontent.com',
-    iosBundleId: 'com.example.bloodBankApp',
+    apiKey: 'YOUR_MACOS_API_KEY',
+    appId: 'YOUR_MACOS_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    databaseURL: 'YOUR_DATABASE_URL',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
+    androidClientId: 'YOUR_ANDROID_CLIENT_ID',
+    iosClientId: 'YOUR_IOS_CLIENT_ID',
+    iosBundleId: 'YOUR_IOS_BUNDLE_ID',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyAtarLMMwFD-_WOPkioWHeANXHi_hEBHwU',
-    appId: '1:786942809012:web:88cc85c698f1ecf6fc98e1',
-    messagingSenderId: '786942809012',
-    projectId: 'blood-bank-app-4ca01',
-    authDomain: 'blood-bank-app-4ca01.firebaseapp.com',
-    databaseURL: 'https://blood-bank-app-4ca01-default-rtdb.firebaseio.com',
-    storageBucket: 'blood-bank-app-4ca01.firebasestorage.app',
-    measurementId: 'G-0BK0Z18XKY',
+    apiKey: 'YOUR_WINDOWS_API_KEY',
+    appId: 'YOUR_WINDOWS_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    authDomain: 'YOUR_AUTH_DOMAIN',
+    databaseURL: 'YOUR_DATABASE_URL',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
+    measurementId: 'YOUR_MEASUREMENT_ID',
   );
 
 }
