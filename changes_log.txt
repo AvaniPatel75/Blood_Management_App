@@ -1,0 +1,51 @@
+Change Log - SQLite & Desktop Support Integration
+=================================================
+
+1. Command Executed
+-------------------
+Command: flutter pub add sqflite_common_ffi
+Description: Added the `sqflite_common_ffi` package to `pubspec.yaml`. This package is required to run SQLite on desktop platforms (Windows, Linux, macOS).
+
+2. File Modified: lib/main.dart
+-------------------------------
+Description: Initialized the database factory for FFI (Foreign Function Interface) when running on desktop platforms. This is necessary because the default `sqflite` plugin only supports mobile (Android/iOS) out of the box.
+
+Changes:
+- Added imports:
+  import 'dart:io';
+  import 'package:sqflite_common_ffi/sqflite_ffi.dart';
+
+- Updated main() function:
+  void main() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    
+    // desktop platform check
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      sqfliteFfiInit();
+      databaseFactory = databaseFactoryFfi;
+    }
+    
+    await Firebase.initializeApp();
+    runApp(const MyApp());
+  }
+
+3. File Modified: lib/model/Blood_bank_model.dart
+-------------------------------------------------
+Description: Updated the data model to handle SQLite limitations. SQLite cannot store complex types like Lists or Maps directly. We now serialize them to JSON strings before saving and deserialize them when reading.
+
+Changes:
+- Added import:
+  import 'dart:convert';
+
+- Updated fromMap():
+  workingDays: (map['workingDays'] is String)
+      ? List<String>.from(jsonDecode(map['workingDays']))
+      : List<String>.from(map['workingDays'] ?? []),
+      
+  bloodStock: (map['bloodStock'] is String)
+      ? Map<String, int>.from(jsonDecode(map['bloodStock']))
+      : Map<String, int>.from(map['bloodStock'] ?? {}),
+
+- Updated toMap():
+  'workingDays': jsonEncode(workingDays),
+  'bloodStock': jsonEncode(bloodStock),
